@@ -49,15 +49,110 @@ body {
 .subtitle {
     justify-self: center;
     margin-top: 0;
+    margin-bottom: 2px;
+    
+}
+
+.subsubtitle {
+    margin-top: 2px;
     margin-bottom: 40px;
+    font-weight: bolder;
 }
 
 .titletext {
     color: rgb(0, 0, 92);
     text-shadow: 3px 3px 15px yellow;
     transition: all 0.5s ease-in-out;
+    text-align: center;
 }
 
 .titletext:hover {
     text-shadow: 3px 3px 15px yellow, 3px 3px 2px yellow ;
+}
+
+.servicesSection {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card {
+    border: 2px solid rgb(39, 39, 39);
+    border-radius: 10px;
+    box-shadow: 3px 3px rgb(102, 102, 102);
+    flex-wrap: wrap;
+    
+
+}
+
+.cardHeader {
+    background-color: blue;
+    padding: 20px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    color:bisque;
+    text-align: center;
+    border-bottom: 5px solid rgb(47, 126, 2);
+}
+
+.cardlistele {
+    margin-right: 20px;
+}
+
+.galery {
+    display: flex; /* Enable flexbox for the gallery section */
+    justify-content: center; /* Center the carousel horizontally */
+    align-items: center; /* Center the carousel vertically (optional) */
+    flex-direction: column; /* Ensure content stacks vertically */
+    margin-top: 40px; /* Adjust margin as needed */
+}
+
+.carousel {
+    max-width: 800px; /* Set a maximum width for the carousel */
+    width: 100%; /* Allow the carousel to adjust to the parent's width */
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background: #ffffff;
+    position: relative;
+    overflow: hidden; /* Needed for button positioning */
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+button {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button.prev {
+    left: 10px; /* Position left button */
+}
+
+button.next {
+    right: 10px; /* Position right button */
+}
+
+button:hover {
+    background: rgba(0, 0, 0, 0.8);
 }
