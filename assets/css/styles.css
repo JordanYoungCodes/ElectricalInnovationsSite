@@ -1,3 +1,10 @@
+:root {
+    --headerBlue:rgb(0, 0, 92);
+    --bordercolor: rgb(29, 1, 25);
+    --boxshadow: rgb(99, 77, 100);
+}
+
+
 .flex {
     display: flex;
     flex-direction: row;
@@ -24,7 +31,7 @@
 }
 
 nav {
-    background-color: rgba(1, 1, 153, 0.788); 
+    background-color: var(--headerBlue); 
     display: flex; 
     flex-direction: row;
     height: 80px; 
@@ -60,7 +67,7 @@ body {
 }
 
 .titletext {
-    color: rgb(0, 0, 92);
+    color: var(--headerBlue);
     text-shadow: 3px 3px 15px yellow;
     transition: all 0.5s ease-in-out;
     text-align: center;
@@ -77,22 +84,22 @@ body {
 }
 
 .card {
-    border: 2px solid rgb(39, 39, 39);
+    border: 3px solid var(--bordercolor);
     border-radius: 10px;
-    box-shadow: 3px 3px rgb(102, 102, 102);
+    box-shadow: 3px 3px var(--boxshadow);
     flex-wrap: wrap;
     
 
 }
 
 .cardHeader {
-    background-color: blue;
+    background-color: var(--headerBlue);
     padding: 20px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     color:bisque;
     text-align: center;
-    border-bottom: 5px solid rgb(47, 126, 2);
+    border-bottom: 5px solid var(--bordercolor);
 }
 
 .cardlistele {
@@ -111,14 +118,14 @@ body {
 .carousel {
     max-width: 50%; /* Set a maximum width for the carousel */
     width: 100%; /* Allow the carousel to adjust to the parent's width */
-    border: 2px solid #ddd;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     background: #ffffff;
     position: relative;
     overflow: hidden;
     justify-content: center; /* Needed for button positioning */
-    border: 4px solid rgb(29, 1, 25);
+    border: 4px solid var(--bordercolor);
+    box-shadow: 3px 3px var(--boxshadow);
 }
 
 .galeryTitle {
@@ -133,7 +140,8 @@ body {
     border-top-left-radius: 10px;
     padding-top: 10px;
     background:rgb(0, 0, 92);
-    color:bisque
+    color:bisque;
+    box-shadow: 3px 3px var(--boxshadow);
 }
 
 .carousel-images {
