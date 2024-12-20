@@ -3,12 +3,12 @@ const images = document.querySelectorAll('.carousel-images img');
 const prevButton = document.querySelector('.prev');
 const nextButton = document.querySelector('.next');
 
-let index = 0;
+let index = 0; // Start with the first image
 
 // Function to update the carousel position
 function updateCarousel() {
-    const width = images[0].clientWidth;
-    carousel.style.transform = `translateX(${-index * width}px)`;
+    const width = images[0].clientWidth; // Get the width of a single image
+    carousel.style.transform = `translateX(${-index * width}px)`; // Shift by the image's width
 }
 
 // Next button functionality
