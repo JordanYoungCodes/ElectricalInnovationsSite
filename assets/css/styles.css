@@ -112,7 +112,7 @@ body {
     align-items: center; /* Center the carousel vertically (optional) */
     flex-direction: column; /* Ensure content stacks vertically */
     margin-top: 40px;
-    border-top: 2px solid rgb(29, 1, 25);
+   
 }
 
 .carousel {
@@ -135,10 +135,10 @@ body {
     border-left: 4px solid rgb(29, 1, 25);
     border-right: 4px solid rgb(29, 1, 25);
     margin-bottom: 0;
-    padding-bottom: 20px;
+    padding-bottom: 35px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    padding-top: 10px;
+    padding-top: 35px;
     background:rgb(0, 0, 92);
     color:bisque;
     box-shadow: 3px 3px var(--boxshadow);
@@ -194,7 +194,11 @@ button:hover {
 
 .cardList {
     height: 200px;
-    overflow-y: scroll  ;
+    
+}
+
+.cardListTest {
+overflow-y: scroll  ;
 }
 
 .customerName {
@@ -206,6 +210,7 @@ button:hover {
 
 .testimonialList {
     list-style-type: none;
+    padding-top: 25px;
 }
 
 .listitem {
@@ -222,7 +227,7 @@ button:hover {
 }
 
 .footer {
-    margin-top: 20px;
+    margin-top: 40px;
     padding: 20px;
     min-height: 50px;
     background: var(--headerBlue);
