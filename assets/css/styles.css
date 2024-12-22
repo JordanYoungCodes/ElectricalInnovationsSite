@@ -106,7 +106,7 @@ body {
     margin-right: 20px;
 }
 
-.galery {
+.gallery {
     display: flex; /* Enable flexbox for the gallery section */
     justify-content: center; /* Center the carousel horizontally */
     align-items: center; /* Center the carousel vertically (optional) */
@@ -128,7 +128,7 @@ body {
     box-shadow: 3px 3px var(--boxshadow);
 }
 
-.galeryTitle {
+.galleryTitle {
     width: 50%;
     text-align: center;
     border-top: 4px solid rgb(29, 1, 25);
@@ -156,11 +156,20 @@ body {
     flex-shrink: 0;
 }
 
+.carousel-description {
+    text-align: center;
+    background: rgba(99, 93, 93, 0.548);
+    padding: 5px 0px;
+    overflow-wrap: normal;
+    
+}
+
+
 button {
     position: absolute;
     top: 50%; /* Center vertically */
     transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(43, 43, 43, 0.5);
     color: #ffffff;
     border: none;
     border-radius: 50%;
@@ -217,11 +226,11 @@ overflow-y: scroll  ;
     margin-bottom: 10px;
 }
 
-.cardHeader, .headerTitle, .galeryTitle {
+.cardHeader, .headerTitle, .galleryTitle {
     transition: all 0.5s ease-in-out; ;
 }
 
-.galeryTitle:hover, .cardHeader:hover, .headerTitle:hover {
+.galleryTitle:hover, .cardHeader:hover, .headerTitle:hover {
     color: yellow;
     text-shadow: 3px 3px 15px yellow; ;
 }
@@ -240,3 +249,25 @@ overflow-y: scroll  ;
     padding-bottom: 40px;
     text-decoration: underline;
 }
+.aboutus {
+    margin-top: 40px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.aboutusbody img {
+   margin-left: 15%;
+   width: 70%;
+   margin-right: 15%; 
+}
+
+ .aboutusbody p {
+    padding: 5px 15px;
+ }   
+
+
+ .descriptioncontainer {
+    float:left;
+    margin: 10% 5%;
+    border: 3px solid black;
+ }
