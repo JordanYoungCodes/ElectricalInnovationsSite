@@ -157,10 +157,20 @@ body {
 }
 
 .carousel-description {
+    color:rgb(0, 0, 56);
+    font-weight: bolder;
+    text-shadow: 1px 1px 12px rgb(0, 225, 255) ;
+    font-size: 20px;
     text-align: center;
-    background: rgba(99, 93, 93, 0.548);
-    padding: 5px 0px;
+    background: rgba(43, 43, 43, 0.219);
+    padding: 0px 0px;
     overflow-wrap: normal;
+    z-index: 100;
+    position: absolute;
+    width: 100%;
+    margin: 0px;
+    
+    
     
 }
 
