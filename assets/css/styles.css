@@ -95,8 +95,6 @@ body {
 .cardHeader {
     background-color: var(--headerBlue);
     padding: 20px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
     color:bisque;
     text-align: center;
     border-bottom: 5px solid var(--bordercolor);
@@ -159,7 +157,7 @@ body {
 .carousel-description {
     color:rgb(0, 0, 56);
     font-weight: bolder;
-    text-shadow: 1px 1px 12px rgb(0, 225, 255) ;
+    text-shadow: 4px 4px 8px rgb(254, 255, 255) ;
     font-size: 20px;
     text-align: center;
     background: rgba(43, 43, 43, 0.219);
@@ -280,4 +278,36 @@ overflow-y: scroll  ;
     float:left;
     margin: 10% 5%;
     border: 3px solid black;
+ }
+
+ @media screen and (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 10px 20px;
+    }
+
+    .servicesSection {
+        display: flex;
+        flex-direction: column;
+    }
+    .cardlistserv {
+        height: max-content;
+    }
+
+    .carousel {
+        max-width: 80%;
+        width: 100%;
+    }
+
+    .galleryTitle {
+        max-width: 80%;
+        width: 100%;
+    }
+
+    .galleryTitle:focus .cardHeader:focus, .headerTitle:focus {
+        color: yellow;
+        text-shadow: 3px 3px 15px yellow; ;
+    }
  }
