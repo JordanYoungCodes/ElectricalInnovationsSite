@@ -1,0 +1,408 @@
+:root {
+    --headerBlue:rgb(0, 0, 92);
+    --bordercolor: rgb(29, 1, 25);
+    --boxshadow: rgb(99, 77, 100);
+}
+
+
+#logo {
+    border: 4px solid var(--headerBlue);
+    height: 72px;
+}
+
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-list {
+    list-style-type: none;
+    align-items: end;
+    width:40%;
+    margin-right: 25px;
+    margin-left: 50%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 400px;
+    
+}
+
+.nav-hover {
+    color:azure;
+    text-decoration: none;
+    text-align: center;
+
+}
+.nav-hover:hover {
+    color:rgb(255, 255, 0); 
+    font-weight: bolder;
+    text-shadow: 1px 1px 5px rgb(236, 252, 166);
+}
+
+nav {
+    background: linear-gradient(90deg, var(--headerBlue),rgb(3, 0, 37)); 
+    display: flex; 
+    flex-direction: row;
+    height: 80px; 
+    margin: 0
+    
+
+}
+
+
+
+.title {
+    justify-self: center;
+    font-size: 50px;
+    margin-bottom: 10px
+}
+body {
+    margin: 0px;
+}
+ 
+.subtitle {
+    justify-self: center;
+    margin-top: 0;
+    margin-bottom: 2px;
+    
+}
+
+.subsubtitle {
+    margin-top: 2px;
+    margin-bottom: 40px;
+    font-weight: bolder;
+}
+
+.titletext {
+    color: var(--headerBlue);
+    text-shadow: 3px 3px 15px yellow;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+}
+
+.titletext:hover {
+    text-shadow: 3px 3px 15px yellow, 3px 3px 2px yellow ;
+}
+
+.servicesSection {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card {
+    border: 3px solid var(--bordercolor);
+    border-radius: 10px;
+    box-shadow: 3px 3px var(--boxshadow);
+    flex-wrap: wrap;
+    
+
+}
+
+.cardHeader {
+    background-color: var(--headerBlue);
+    padding: 20px;
+    color:bisque;
+    text-align: center;
+    border-bottom: 5px solid var(--bordercolor);
+}
+
+.cardlistele {
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.gallery {
+    display: flex; /* Enable flexbox for the gallery section */
+    justify-content: center; /* Center the carousel horizontally */
+    align-items: center; /* Center the carousel vertically (optional) */
+    flex-direction: column; /* Ensure content stacks vertically */
+    margin-top: 40px;
+   
+}
+
+.carousel {
+    max-width: 50%; /* Set a maximum width for the carousel */
+    width: 100%; /* Allow the carousel to adjust to the parent's width */
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: #ffffff;
+    position: relative;
+    overflow: hidden;
+    justify-content: center; /* Needed for button positioning */
+    border: 4px solid var(--bordercolor);
+    box-shadow: 3px 3px var(--boxshadow);
+}
+
+.galleryTitle {
+    width: 50%;
+    text-align: center;
+    border-top: 4px solid rgb(29, 1, 25);
+    border-left: 4px solid rgb(29, 1, 25);
+    border-right: 4px solid rgb(29, 1, 25);
+    margin-bottom: 0;
+    padding-bottom: 35px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding-top: 35px;
+    background:rgb(0, 0, 92);
+    color:bisque;
+    box-shadow: 3px 3px var(--boxshadow);
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+    height:400px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.carousel-description {
+    color:rgb(255, 230, 2);
+    font-weight: bolder;
+    text-shadow: 4px 4px 6px rgb(254, 255, 255) ;
+    font-size: 20px;
+    text-align: center;
+    background: rgba(43, 43, 43, 0.219);
+    padding: 0px 0px;
+    overflow-wrap: normal;
+    z-index: 100;
+    position: absolute;
+    width: 100%;
+    margin: 0px;
+    
+    
+    
+}
+
+
+button {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+    background: rgba(43, 43, 43, 0.5);
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button.prev {
+    left: 10px; /* Position left button */
+}
+
+button.next {
+    right: 10px; /* Position right button */
+}
+
+button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.testimonials {
+    margin-left: 10%;
+    margin-top: 40px;
+    max-width: 80%;
+    justify-content: center;
+}
+
+.cardList {
+    height: 300px;
+    
+}
+.cardlistserv {
+    height:fit-content
+}
+
+.cardListTest {
+overflow-y: scroll  ;
+}
+
+.customerName {
+    color: blue;
+    font-weight: bolder;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.testimonialList {
+    list-style-type: none;
+    padding-top: 25px;
+}
+
+.listitem {
+    margin-bottom: 10px;
+}
+
+.cardHeader, .headerTitle, .galleryTitle {
+    transition: all 0.5s ease-in-out; ;
+}
+
+.galleryTitle:hover, .cardHeader:hover, .headerTitle:hover {
+    color: yellow;
+    text-shadow: 3px 3px 15px yellow; ;
+}
+
+.footer {
+    margin-top: 40px;
+    padding: 20px;
+    min-height: 50px;
+    background: linear-gradient(90deg, var(--headerBlue),rgb(3, 0, 37));
+    color:#ffffff;
+}
+
+.footerTitle {
+    text-align: center;
+    color:bisque;
+    padding-bottom: 40px;
+    text-decoration: underline;
+}
+.aboutus {
+    margin-top: 40px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.aboutusbody img {
+   margin-left: 15%;
+   width: 70%;
+   margin-right: 15%; 
+}
+
+ .aboutusbody p {
+    padding: 5px 15px;
+ }   
+
+
+ .descriptioncontainer {
+    float:left;
+    margin: 10% 5%;
+    border: 3px solid black;
+ }
+
+ /* Modal background */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Modal content */
+  .modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Close button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form label {
+    margin-top: 10px;
+  }
+  
+  form input, form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  #formbutton {
+    align-self: flex-end;
+    position: relative;
+    margin-top: 40px;
+    margin-left: 100%;
+    transform: translateY(-50%);
+    background: rgba(43, 43, 43, 0.5);
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    justify-content: flex-end;
+    
+  }
+
+ @media screen and (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 10px 20px;
+    }
+
+    .servicesSection {
+        display: flex;
+        flex-direction: column;
+    }
+    .cardlistserv {
+        height: max-content;
+    }
+
+    .carousel {
+        max-width: 80%;
+        width: 100%;
+    }
+
+    .galleryTitle {
+        max-width: 80%;
+        width: 100%;
+    }
+
+    .galleryTitle:focus .cardHeader:focus, .headerTitle:focus {
+        color: yellow;
+        text-shadow: 3px 3px 15px yellow; ;
+    }
+
+    .nav-list {
+      
+       
+        width:60%;
+        margin-right: 25px;
+        margin-left: 10%;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        
+    }
+ }
