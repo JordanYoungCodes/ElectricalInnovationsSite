@@ -31,6 +31,7 @@ app.post('/send-email', (req, res) => {
       subject: `New message from ${name}`,
       text: `This is a message from ${name}.
       Phone number: ${phone}
+      Email: ${email}
       message: ${message}`,
     };
   
